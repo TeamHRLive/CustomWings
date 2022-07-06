@@ -3,7 +3,6 @@ package tigeax.customwings;
 import java.io.File;
 import java.util.*;
 
-import org.bstats.bukkit.Metrics;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.configuration.file.YamlConfiguration;
@@ -82,9 +81,6 @@ public class CustomWings extends JavaPlugin {
 		// Check if there is a newer version available on Spigot
 		Util.runUpdateChecker(this, spigotResourceId);
 
-		// bStats setup
-		int pluginId = 8227;
-		new Metrics(this, pluginId);
 
 		// Setup Configuration
 		config = new Config(this);
